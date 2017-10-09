@@ -10,9 +10,6 @@ function getAndPrintHTMLChunks() {
     response.on('data', function(data) {
       console.log(data);
     });
-    response.on('error', function(data) {
-      console.log('There was an error');
-    })
     response.on('end', function() {
       console.log('Complete');
     });
