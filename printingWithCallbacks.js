@@ -8,7 +8,7 @@ function printHTML (html) {
 };
 function getHTML(options, callback) {
   var finalData = '';
-  https.get(requestOptions, function(response) {
+  https.get(options, function(response) {
     response.setEncoding('utf8');
     response.on('data', function(data) {
       finalData += data;
