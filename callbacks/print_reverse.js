@@ -4,8 +4,10 @@ var requestOptions = {
   host: 'sytantris.github.io',
   path: '/http-examples/step6/reverse.html'
 };
-function  (html) {
-  console.log(html);
+function printReverse (html) {
+  var htmlArr = html.split();
+  var htmlStr = htmlArr.reverse().join(' ');
+  console.log(htmlStr);
 };
 
-getHTML(requestOptions, );
+getHTML(requestOptions, printReverse);
